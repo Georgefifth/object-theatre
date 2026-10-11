@@ -21,3 +21,5 @@ ctx.api.restart();ctx.api.go('letter');ctx.api.go('bar');const before=ctx.api.st
 console.log('PASS: choice memories undo correctly; session refresh resumes a valid path.');
 
 ctx.api.restart();assert.equal(story.start.choices.length,2);ctx.api.go('invite',story.start.choices[1].label);assert(story.eraserDraft.text({invitedEraser:true})[0].includes('先问了我'));assert(!story.eraserDraft.text({})[0].includes('先问了我'));console.log('PASS: opening offers immediate choices and actor-first choice has a distinct later callback.');console.log('Dialogue beats per complete route:',Math.min(...paths.map(p=>p.length)),Math.max(...paths.map(p=>p.length)));
+
+assert(story.bar.text({invitedEraser:true})[0].includes('还没答应'));assert(story.bar.text({})[0].includes('我才刚出场'));assert.notDeepEqual(story.bar.text({}),story.bar.text({invitedEraser:true}));console.log('PASS: asking Eraser first produces a coherent, distinct loading-bar transition.');

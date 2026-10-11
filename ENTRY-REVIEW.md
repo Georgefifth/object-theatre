@@ -16,3 +16,8 @@ Fresh browser at local port 8774: choices present at first load, actor-first rep
 
 ## Still unproven
 Whether strangers stay longer or enjoy it more requires actual first-time playtests. The two opening options reconverge at the loading-bar scene; their payoff is dialogue and character memory, not a different ending. No new audience analytics or collection of personal data was added.
+
+## Follow-up: remove explanation overload
+The next user review identified a spoiler in the opening hook and a discontinuity in the actor-first loading-bar reaction. Removed the premise/count and button-takeover hook entirely. The scene introduces the pink Eraser and the reassignment envelope before inviting a reaction; it no longer assigns the visitor a managerial decision. Both opening choices still reconverge, but immediate replies and later Eraser memory differ. The loading-bar line now acknowledges the actor-first conversation instead of repeating the unaware reaction.
+Removed permanent stage nameplates and speaker dots; retain readable speaker names and restrained actor colors. Keep the existing illustrated assets. Move the opt-in sound toggle into the header, with volume and required attribution in a collapsible footer. Audio still loads only on explicit enable; playback errors remain visible near the header.
+Mobile: shorten the stage at small viewport heights and put a full-width Continue above auxiliary controls. Browser checks at 375×667 and 320×568 show the opening options and actor-first Continue without initial scrolling; controls retain at least 44px targets. Actual audio playback verified with a ready, unpaused audio element and advancing currentTime. Browser checks are not native WeChat/iOS testing and do not establish higher retention.
