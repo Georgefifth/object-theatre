@@ -17,3 +17,6 @@ Meaningful unit tests for input/response validation, provider request paths, inv
 
 ## Design
 Paper-white stage #fffdf8; theatrical pink #e74767; violet ink #342254; ticket yellow #f5d46c; muted violet #82748e. Large bold sans title, short handwritten-feeling speech bubbles using local cursive fallbacks. Main comic canvas provides structure; objects sit in a casting strip. Playful actor protest crosses a panel border; motion only on opening curtain and user-triggered protest, with reduced-motion support.
+
+## Current release: static visual novel
+The user-selected main product is now web/play/: the bilingual three-act comedy Who covers tonight. Keep path-derived character memories, undo and choice gates intact. presentation.js controls generated actor art; music.js controls opt-in, locally hosted CC BY music. No runtime AI, account or backend is needed. Preserve user progress and default audio off; do not autoplay on refresh. Credits must remain visible in the product and MUSIC-CREDITS.md. Validate reader, story, presentation and audio state transitions, then verify the actual Pages deployment. The earlier comic constraints above apply to that separate legacy feature.

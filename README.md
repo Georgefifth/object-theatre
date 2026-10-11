@@ -4,7 +4,7 @@ Current release: **Who covers tonight? / 今晚谁来救场**, a three-act absur
 
 [Play the visual novel](https://georgefifth.github.io/object-theatre/play/?lang=zh-CN) · [English](https://georgefifth.github.io/object-theatre/play/?lang=en) · [Competitive review and acceptance record](COMPETITIVE-REVIEW.md)
 
-No account, key or backend is needed for the visual novel. One current route is saved in this browser; clearing site data removes it. Saved progress is not synced between devices or different site origins. Restart keeps the read record. Skip stops at new dialogue or choices, including changed relationship lines. Use Space/Right to advance and Left to go back, or the buttons.
+No account, key or backend is needed for the visual novel. One current route is saved in this browser; clearing site data removes it. Saved progress is not synced between devices or different site origins. Restart keeps the read record. Skip stops at new dialogue or choices, including changed relationship lines. Use Space/Right to advance and Left to go back, or the buttons. Optional music is off by default: click Play music to enable the three-act soundtrack, then adjust its volume. Hidden tabs pause playback. [Music credits and behavior](MUSIC-CREDITS.md).
 
 The earlier interactive comic below remains available; its optional photo generator is a separate local-only experiment.
 
@@ -41,6 +41,7 @@ node --check web/i18n.js
 node test_comedy_story.js
 node test_presentation.js
 node test_reader.js
+node test_music.js
 ```
 
 Tests use mocked model responses. The GitHub Actions workflow validates the server and JS and deploys only `web/` to Pages; no backend or credentials are published in the site.
