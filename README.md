@@ -4,6 +4,8 @@ Three everyday objects become actors. One challenges the director. Hear them out
 
 ## Public preview
 
+[Play online](https://georgefifth.github.io/object-theatre/) · [English](https://georgefifth.github.io/object-theatre/?lang=en) · [Validation record](VERIFICATION.md)
+
 The GitHub Pages version runs an original, pre-authored sample in Chinese and English. No account, API key or model calls are required. Photo creation is **not available on Pages**: it cannot run the Python backend. The public preview hides photo upload and key entry.
 
 Choose a language, play the sample, compare both endings, or expand the cast to swap parts and names. Download a standalone HTML play or use the browser print dialog. The page does not persist your work; export it before refreshing.
