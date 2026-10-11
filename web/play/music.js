@@ -12,7 +12,7 @@ var TheatreMusic=(()=>{
     button.onclick=()=>{enabled=!enabled;sync();};slider.oninput=()=>{volume=Math.max(0,Math.min(.5,Number(slider.value)/100||0));audio.volume=volume;try{storage.setItem('theatre-music-volume',String(volume));}catch{}};
     audio.addEventListener('error',()=>{if(!enabled)return;++generation;enabled=false;pending=false;error=true;current=-1;audio.pause();paint();});
     document.addEventListener('visibilitychange',sync);
-    function update(act,node,nextLang){lang=nextLang;const next=cue(act,node);if(desired!==next){desired=next;sync();}else paint();}
+    function update(act,node,nextLang,stagePowerOff=false){lang=nextLang;const next=stagePowerOff?-1:cue(act,node);if(desired!==next){desired=next;sync();}else paint();}
     paint();return {update,state:()=>({enabled,current,desired,volume})};
   }
   return {create,cue,tracks};

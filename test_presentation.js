@@ -12,3 +12,5 @@ for(const path of ['web/play/assets/actors-v1.png','web/play/assets/scenes-v1.pn
 console.log('PASS: 9 atlas expressions, 3 backgrounds, closeups and border-crossing actor placement.');
 
 assert(!p.stage({node:'start',actor:'n',act:1,scene:'memo'}).includes('actor-label'));console.log('PASS: stage does not accumulate actor nameplates.');
+
+assert(p.stage({node:'verdict',actor:'c',act:1,scene:'memo',effect:'cup'}).includes('trapped-cup'));assert(!p.stage({node:'verdict',actor:'c',act:1,scene:'memo',effect:'cup'}).includes('slot-c'));assert(p.stage({node:'verdict',actor:'c',act:1,scene:'memo',effect:'key'}).includes('wheel-key'));assert(p.describe({node:'verdict',actor:'c',act:1,scene:'memo',effect:'cup'}).includes('倒扣'));assert(p.describe({node:'horror3',actor:'n',act:1,scene:'mouseTrouble'}).includes('拖走'));console.log('PASS: rescue stage effects and descriptions persist when ordinary scene props change.');
