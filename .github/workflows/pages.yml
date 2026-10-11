@@ -23,6 +23,7 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest -v
       - run: node --check web/app.js && node --check web/i18n.js
+      - run: node --check web/play/play.js && node --check web/play/presentation.js && node test_comedy_story.js && node test_presentation.js && node test_reader.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
